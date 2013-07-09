@@ -649,7 +649,7 @@ void fread_formatted(void)
       printf("done.");
       break;
 
-    case NULL:
+    case 0:
       delete_element(elem_num);
       break;
 
@@ -744,7 +744,7 @@ void fwrite_formatted(void)
                 new_string->title);
         break;
 
-      case NULL:
+      case 0:
       case MISMATCH:
         break;
       }

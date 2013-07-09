@@ -52,7 +52,7 @@ static int stree_build_threshold = 10;
 static int stree_print_flag = ON;
 static int stats_flag = ON;
 
-FILE     *fpout = stdout;
+FILE     *fpout;
 
 
 /*
@@ -81,6 +81,12 @@ void set_display_options(void);
  **********************************************************************/
 int main(void)
 {
+
+  /*
+   * Initialize fpout.
+   */
+  fpout = stdout;
+
   /*
    * Initialize the array of sequences.
    */
